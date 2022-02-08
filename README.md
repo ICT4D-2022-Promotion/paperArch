@@ -1,6 +1,13 @@
 # Alfresco AIO Project - SDK 4.0
 
-This is an All-In-One (AIO) project for Alfresco SDK 4.0.
+This is an All-In-One (AIO) project for Alfresco SDK 4.1.
+
+# Preriquest
+  Before executin this project, it suppose that you this the followiing things installed in your computer
+  * maven
+  * java 11 , the minimal version for this
+  * Docker desktop , if you are unsing windows 10 or higher version.
+  * Docker and Docker compose , if your windows version is older thans windows 10.
 
 Run with `./run.sh build_start` or `./run.bat build_start` and verify that it
 
@@ -26,6 +33,8 @@ All the services of the project are now run as docker containers. The run script
  `integration-tests` module and stop the environment.
  * `test`. Execute the integration tests (the environment must be already started).
 
+ After this completed, your share project is opened at this url (https://localhost:8080)
+
 # Few things to notice
 
  * No parent pom
@@ -39,6 +48,7 @@ All the services of the project are now run as docker containers. The run script
  * Integration tests module to execute tests against the final environment (dockerised)
  * Resources loaded from META-INF
  * Web Fragment (this includes a sample servlet configured via web fragment)
+
 
 # TODO
 
