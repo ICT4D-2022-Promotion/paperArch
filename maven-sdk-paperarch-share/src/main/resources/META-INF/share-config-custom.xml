@@ -20,6 +20,7 @@
         <aspects>
             <visible>
                 <aspect name="acme:securityClassified"/>
+                <aspect name="kla:testAspect"/>
             </visible>
             <addable> <!-- defaults to visible config -->
             </addable>
@@ -30,7 +31,9 @@
             <!-- Define the ACME base doc type as decedent from cm:content -->
             <type name="cm:content">
                 <subtype name="acme:document"/>
+                <subtype name="kla:testModel"/>
             </type>
+            <type name="kla:testModel"></type>
         </types>
     </config>
 

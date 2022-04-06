@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="uy1:etudeModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Model des document concernant l'étude à l'UY1</description>
+    <author>Noe Kenfack</author>
+    <version>1.0</version>
+    
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.uy1.org/model/etude/1.0" prefix="uy1"/>
+    </namespaces>
+    
+    <constraints>
+        <constraint name="uy1:contrainteDecision" type="LIST">
+            <parameter name="allowedValues">
+                <list>
+                    <value>ADMIS</value>
+                    <value>ECHEC</value>
+                </list>
+            </parameter>
+        </constraint>
+    </constraints>
+    
+    <types>
+        <type name="uy1:releve">
+            <title>Relevé de notes</title>
+            <parent>cm:content</parent>
+            <properties>
+                <property name="uy1:nomEtudiant">
+                    <title>Nom de l'étudiant</title>
+                    <type>d:text</type>
+                    <!--pour definir un chq;p obligatoire, on utlise l'atrribut:-->
+                    <mandatory>true</mandatory>
+                </property>
+                <property name="uy1:matricule">
+                    <title>Nom de l'étudiant</title>
+                    <type>d:text</type>
+                    <!--pour definir un chq;p obligatoire, on utlise l'atrribut:-->
+                    <mandatory>true</mandatory>
+                </property>
+                <property name="uy1:filiere">
+                    <title>Nom de l'étudiant</title>
+                    <type>d:text</type>
+                    <!--pour definir un chq;p obligatoire, on utlise l'atrribut:-->
+                    <mandatory>true</mandatory>
+                </property>
+                <property name="uy1:mgp">
+                    <title>MGP de l'étudiant</title>
+                    <type>d:float</type>
+                    <!--pour definir un chq;p obligatoire, on utlise l'atrribut:-->
+                    <mandatory>true</mandatory>
+                </property>
+                <property name="uy1:decision">
+                    <title>Decision</title>
+                    <type>d:text</type>
+                    <!--pour definir un chq;p obligatoire, on utlise l'atrribut:-->
+                    <mandatory>true</mandatory>
+                    <constraints>
+                    	<constraint ref="uy1:contrainteDecision" />
+                    </constraints> 
+                </property>
+            </properties>
+            <!-- definir les associations -->
+            <associations >
+            	<association name="uy1:dipFil">
+            		<source>
+            			<mandatory>true</mandatory>
+            			<many>false</many>
+            		</source>
+            		<target>
+            			<class>uy1:diplome</class>
+            			<mandatory>true</mandatory>
+            			<many>false</many>
+            		</target>
+            	</association>
+            </associations>
+            <!-- attacher l'aspect sur la definition d'un type -->
+            <!-- <mandatory-aspect>
+            	<aspect>uy1:Valider</aspect>
+            </mandatory-aspect>-->
+        </type>
+        
+        <type name="uy1:diplome" >
+        	<title>Diplome</title>
+        	<parent>cm:content</parent>
+        	<properties>
+        		<property name="uy1:anneeObtention" >
+        			<title>Ann2e d'obtention du diplome</title>
+        			<type>d:date</type>
+        			<mandatory>true</mandatory>
+        		</property>
+        	</properties>
+        </type>
+    </types>
+    
+    <!-- Creation d'un aspect -->
+    <aspects>
+        <!-- A document can have security classification applied and
+             faceted search is specifically enabled for best performance and we change
+             default index config to not tokenize the value. -->
+        <aspect name="uy1:valider">
+            <title>Docuemt Valide</title>
+            <description>Document valide</description>
+            <properties>
+                <property name="uy1:dateValidation">
+                    <type>d:date</type>
+                    <!-- determier si l'aspect est indexable par le moteur de recherche -->
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>false</tokenised>
+                    </index>
+                   <!-- <constraints>
+                        <constraint ref="acme:securityClassificationOptions"/>
+                    </constraints>  -->
+                </property>
+            </properties>
+        </aspect>
+    </aspects>
+
+</model>

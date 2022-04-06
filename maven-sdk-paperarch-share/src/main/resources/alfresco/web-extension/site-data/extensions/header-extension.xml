@@ -1,0 +1,16 @@
+<extension>
+<modules>
+<module>
+<id>Contezza – Header</id>
+<auto-deploy>true</auto-deploy>
+<customizations>
+<customization>
+<targetPackageRoot>org.alfresco</targetPackageRoot>
+<dependencies>
+<css>/res/themes/contezza/header.css</css>
+</dependencies>
+</customization>
+</customizations>
+</module>
+</modules>
+</extension>

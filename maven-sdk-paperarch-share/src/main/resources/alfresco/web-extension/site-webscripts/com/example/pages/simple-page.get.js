@@ -1,9 +1,12 @@
 model.jsonModel = {
+	
+	rootNodeId: "share-header",
+	services: getHeaderServices(),
     widgets: [{
         id: "SET_PAGE_TITLE",
         name: "alfresco/header/SetTitle",
         config: {
-            title: "This is a sample HELLO page"
+            title: "Alfresco paperArch sample page"
         }
     },
         {
@@ -18,7 +21,7 @@ model.jsonModel = {
                         config: {
                             logoClasses: "alfresco-logo-only"
                         }
-                    },
+                    }, 
                     {
                         id: "DEMO_SIMPLE_MSG",
                         name: "tutorials/widgets/TemplateWidget"
