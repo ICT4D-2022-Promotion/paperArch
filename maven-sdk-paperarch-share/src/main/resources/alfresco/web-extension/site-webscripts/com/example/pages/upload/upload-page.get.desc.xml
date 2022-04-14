@@ -1,0 +1,6 @@
+<webscript>
+    <shortname>Upload page</shortname>
+    <description>the upload files page</description>
+    <family>Share</family>
+    <url>/upload-page</url>
+</webscript>

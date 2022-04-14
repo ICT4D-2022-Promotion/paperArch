@@ -1,12 +1,12 @@
 model.jsonModel = {
 	
-	rootNodeId: "share-header",
-	services: getHeaderServices(),
+	/*rootNodeId: "share-header",*/
+	/*services: getHeaderServices(),*/
     widgets: [{
         id: "SET_PAGE_TITLE",
         name: "alfresco/header/SetTitle",
         config: {
-            title: "Alfresco paperArch sample page"
+            title: "Alfresco Tutorial sample page"
         }
     },
         {
