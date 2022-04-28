@@ -1,20 +1,20 @@
 .my-template-widget {
-  border: 1px #000000 solid;
+  /* border: 1px #000000 solid;
   padding: 1em;
   width: 100px;
-  background-color: navy;
+  background-color: navy; */
 }
 .container {
   /* position: absolute;  */
-  width: 1400px; 
-  height: 1000px; 
+  /* width: 1400px;  */
+  /* height: 1000px;  */
   left: 0px;
   top: 0px;
   bottom: 0px;
   background: #c6ecff;
-  padding: 20px;
-  display: flex;
-  /* flex: 1; */
+  /* padding: 20px; */
+  /* display: flex;  */
+  flex: 1;
 }
 .subContainer {
   /* position: absolute; */
@@ -22,8 +22,8 @@
   height: 100%; */
   /* left: 60px;
   top: 65px; */
-  background: rgba(242, 250, 253, 0.63);
-  border-radius: 20px;
+  /* background: rgba(242, 250, 253, 0.63);
+  border-radius: 20px; */
   /* flex: 1; */
   /* top: 0px;
   bottom: 0px;
