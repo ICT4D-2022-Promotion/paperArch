@@ -9,10 +9,10 @@ model.jsonModel = {
         title: 'files upload page',
       },
     },
-    // {
-    //     id:'Custom page',
-    //     name:'tutorials/widgets/TemplateWidget',
-    // },
+    {
+        id:'Custom page',
+        name:'tutorials/widgets/TemplateWidget',
+    },
     {
       id: 'PARENT_BUTTON_NAV',
       name: 'alfresco/buttons/AlfButton',

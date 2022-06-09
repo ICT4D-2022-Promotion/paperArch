@@ -9,7 +9,7 @@ if (adminMenu != null)
    delete adminMenu.config.targetUrl;
        
    // Add a new "widgets" array to the configuration...
-   adminMenu.config.widgets = [
+/*   adminMenu.config.widgets = [
       {   
          name: "alfresco/menus/AlfMenuGroup",
          config: {
@@ -124,3 +124,4 @@ if (adminMenu != null)
       }
    ];
 }
+*/
