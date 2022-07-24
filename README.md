@@ -1,4 +1,4 @@
-# Alfresco maven sdk - paperArch
+1# Alfresco maven sdk - paperArch
 
 ## Table of Contents
 1. [General Info](#general-info)
@@ -17,22 +17,27 @@ It is based on Apache Maven and Docker and is compatible with major IDEs. This e
 
 ***
 ## Technologies
-  this project is an `All-In-One (AIO)` project, generated from [maven alfresco sdk](https://docs.alfresco.com/content-services/6.0/develop/sdk/), it is principally a `j2ee` project. 
-  As it, we will use various technologies as the mains are :
+  this project is an `All-In-One (AIO)` project, generated from [maven alfresco sdk](https://docs.alfresco.com/content-services/6.2/develop/sdk/), it is principally a `j2ee` project. 
+  As it, we will use various languages as the mains are :
   * `XML`,
   * `java`,
   * `javaScript`,
   * `html`,
-  * `ftl`, what is a freeMarker template language
+  * `ftl`, what is a freeMarker template language,
 
 ***
 ## Installation
-  ### Preriquest
-    Before executing this project, it suppose that you this the following things installed in your computer
+  ### Preriquest (Software and hardware)
+    Before executing this project, it suppose that you have the following things installed in your computer
   * [maven](https://maven.apache.org/install.html  )
   * [java 11](https://www.oracle.com/java/technologies/downloads/#java11) , the minimal version for this
   * [Docker desktop](https://www.docker.com/get-started/) , if you are using windows 10 or higher version.
   * [Docker and Docker compose](https://docs.docker.com/compose/gettingstarted/) , if your windows version is older than windows 10.
+  * [Eclipse](https://www.eclipse.org/downloads/): used as IDE 
+  * A fairly powerful computer ( at least 12Go of memory(RAM), 100Go+ of free primary disk,).
+  * A stable internet connection
+  * A browser: used as a tool for using the application
+  * Git: used as version manager
 
 ### run the project
 
@@ -45,11 +50,11 @@ It is based on Apache Maven and Docker and is compatible with major IDEs. This e
 
   and verify that it
 
- * Runs Alfresco Content Service (ACS)
- * Runs Alfresco Share
- * Runs Alfresco Search Service (ASS)
- * Runs PostgreSQL database
- * Deploys the JAR assembled modules
+ * Runs Alfresco Content Service (ACS) : responsible for the business logic side (java code) of alfresco, allowing the dynamization of data on share
+ * Runs Alfresco Share : responsible for the front-end of the alfresco application
+ * Runs Alfresco Search Service (ASS) : responsible for the research module of alfresco
+ * Runs PostgreSQL database : 
+ * Deploys the JAR assembled modules : executable files of our containers
  
 All the services of the project are now run as docker containers. The run script offers the next tasks:
 
@@ -85,8 +90,8 @@ All the services of the project are now run as docker containers. The run script
 
 ## Collaborators
   contributers to this project are : 
-   * Kenfack L. Aurel Noe : 19M2791
-   * Feussi Lassi Joseph : 19K2803
+   * Kenfack L. Aurel Noe     19M2791: +237697606274 | kenfaclnoe@gmail.com
+   * Feussi Lassi Joseph      19K2803: +237695233625 | Feussilassi@gmail.com
 
 # TODO
 
@@ -94,3 +99,4 @@ All the services of the project are now run as docker containers. The run script
   * Functional/remote unit tests
 
 "# paperArch" 
+
