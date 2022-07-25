@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+   <title>Green Theme Override</title>
+   <title-id>theme.trainingTheme</title-id>
+   <css-tokens>
+      <!-- Aikau related LESS variables (requires Aikau 1.0.18 or newer) -->
+      <less-variables>
+         @header-background-color: green;
+         @header-font-color: white;
+         @header-hover-background-color: cyan;
+         @header-hover-font-color: green;
+         @header-focus-background-color: white;
+         @header-focus-font-color: green;
+          @header-menubar-font-color: pink; 
+         @header-dropdown-menu-font-color: black;
+      </less-variables>
+   </css-tokens>
+</theme> 

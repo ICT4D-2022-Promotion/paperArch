@@ -5,7 +5,7 @@
    <css-tokens>
       <!-- Aikau related LESS variables (requires Aikau 1.0.18 or newer) -->
       <less-variables>
-         @header-background-color: #799212;
+         @header-background-color: blue;
          @header-font-color: #ccc;
          @header-hover-background-color: orange;
          @header-hover-font-color: green;

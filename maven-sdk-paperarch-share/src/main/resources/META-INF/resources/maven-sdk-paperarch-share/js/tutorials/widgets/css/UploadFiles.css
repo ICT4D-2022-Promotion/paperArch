@@ -1,0 +1,129 @@
+body, html {
+    margin: 0;
+    font-size: 16px;
+    background-color: #3FB7FF;
+}
+
+.mainBoard {
+    min-height: 700px;
+    width: auto;
+    margin: 3%;
+    background-color: #F2FAFD ;
+    border-radius: 20px;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    height: 5%;
+    padding: 20px;
+    border-bottom: 2px #DEDEDE solid ;
+    font-family: FontAwesome;
+
+}
+
+label {
+    background-color: #3FB7FF;
+    padding: 4px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-right: 2%;
+}
+
+seflect {
+    border-radius: 5px;
+    background-color: white;
+    border: thin solid #3FB7FF;
+    font-weight: bold;
+    color: #C4C4C4;
+    padding: 4px 10px;
+}
+
+.box select {
+  background-color: #c2e7ff;
+  color: rgb(119, 119, 119);
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: thin solid #55beff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  font-weight: bold;
+}
+
+.box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+  padding: 30px;
+}
+
+/* Contain section */
+.contain {
+    display: grid;
+    grid-template-columns: 3fr 2fr
+}
+
+#docDisplay {
+  min-height: 600px;
+}
+
+#docForm {
+  border-right: 2px #DEDEDE solid ;
+}
+
+/* Drop Zone*/
+
+h2 {
+  text-align: center;
+  color: #3FB7FF;
+}
+.drag-area{
+  border: 2px dashed #55beff;
+  min-height: 400px;
+  border-radius: 5px;
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.drag-area.active{
+  border: 2px solid #55beff;
+}
+.drag-area .icon{
+  font-size: 100px;
+  color: #3FB7FF;
+}
+.drag-area header{
+  font-size: 30px;
+  font-weight: 500;
+  color: #3FB7FF;
+}
+.drag-area span{
+  font-size: 25px;
+  font-weight: 500;
+  color: #3FB7FF;
+  margin: 10px 0 15px 0;
+}
+.drag-area button{
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #3FB7FF;
+  color: #5256ad;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.drag-area img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
